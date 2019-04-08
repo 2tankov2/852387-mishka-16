@@ -6,7 +6,129 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+      <a class="page-header_logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+                <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+                <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+                <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+                <a href="#">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="page-main">
+
+      <section class="fast-main">
+
+        <h1 class="info">Милые штучки ручной работы для дома</h1>
+        <img class="hero" src="img/hero-mobile.png" width="322" height="373" alt="Главные герои магазина">
+
+        <ul>
+          <li>
+              <button class="fast-main__toggle" type="button">Предметы интерьера</button>
+          </li>
+          <li>
+              <button class="fast-main__toggle" type="button">Детские игрушки</button>
+          </li>
+        </ul>
+
+      </section>
+
+      <section class="product-week">
+        <h2>Вязаные корзинки</h2>
+        <h3>Товар недели</h3>
+        <p>Экологически чистая пряжа, ручная работа.
+          Доступны в шести расцветкахб и трех размерах.</p>
+          <table class="product-week__list">
+              <tr>
+                <td class="product-week__value">
+                  Цвет:
+                </td>
+                <td class="product-week__field">
+                  «Тиффани»/серый
+                </td>
+              </tr>
+              <tr>
+                  <td class="product-week__value">
+                    Диаметр:
+                  </td>
+                  <td class="product-week__field">
+                    25 см
+                  </td>
+                </tr>
+                <tr>
+                    <td class="product-week__value">
+                      Высота:
+                    </td>
+                    <td class="product-week__field">
+                      15 см
+                    </td>
+                  </tr>
+            </table>
+
+            <img class="product-week__triple-set" src="img/triple-set-mobile.png" width="260" height="315" alt="Вязаные корзинки">
+
+            <p>Цена: 990 руб.</p>
+
+            <button class="product-week_order" type="button">Заказать</button>
+
+      </section>
+
+      <section class="advantages">
+
+        <h2 class="">Коротко о нас:</h2>
+
+        <ul class="advantages_list">
+          <li><span>цветок</span>Экологически чистые материалы</li>
+          <li><span>купюра</span>Скандинавский стиль по российской цене</li>
+          <li><span>сердце</span>Увеличивает лайки на фотографиях</li>
+          <li><span>клубок</span>Связано вручную с любовью и умилением</li>
+          <li><span>ракета</span>Поддержка отечественного производителя</li>
+          <li><span>подарок</span>Поставляется в подарочной упаковке</li>
+        </ul>
+
+      </section>
+
+
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__social social">
+          <b class="social__title">Давайте дружить!</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--twiter" href="https://www.twiter.com/htmlacademy">Мы в Твитере</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+              <b class="copyright__text">Разработано:</b>
+              <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>логотип HtmlАкадемии</span></a>
+          </div>
+
+    </footer>
 
   </body>
 </html>
