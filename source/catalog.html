@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page">
 
@@ -16,16 +17,16 @@
             <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                    <a>Каталог товаров</a>
+                    <a class="site-list__link">Каталог товаров</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Вязание на заказ</a>
+                    <a class="site-list__link" href="#">Вязание на заказ</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Поиск по сайту</a>
+                    <a class="site-list__link" href="#">Поиск по сайту</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Корзина: пока пуста</a>
+                    <a class="site-list__link" href="#">Корзина: пока пуста</a>
                 </li>
               </ul>
             </div>
@@ -35,7 +36,7 @@
 
         <main class="page-main">
 
-          <h1>Каталог товаров</h1>
+          <h1 class="title">Каталог товаров</h1>
 
           <section class="catalog">
 
@@ -44,21 +45,27 @@
               <ul class="catalog-list">
                 <li class="catalog-item">
                   <img class="catalog__image" src="img/photo-1.png" width="260" height="195" alt="Вязаный зайка">
-                  <h3>Зайчик-попрыгайчик</h3>
-                  <p>Рост 30 см, вес 200 г</p>
-                  <p>1200 руб.</p>
+                  <div class="catalog-item__product">
+                    <h3 class="catalog-item__product-name">Зайчик-попрыгайчик</h3>
+                    <p class="catalog-item__product-description">Рост 30 см, вес 200 г</p>
+                    <p class="catalog-item__product-price">1200 руб.</p>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <img class="catalog__image" src="img/photo-2.png" width="260" height="195" alt="Вязаный зайка">
-                  <h3>Корзинка для белья</h3>
-                  <p>Диаметр 15 см, высота 10 см</p>
-                  <p>690 руб.</p>
+                  <div class="catalog-item__product">
+                    <h3 class="catalog-item__product-name">Корзинка для белья</h3>
+                    <p class="catalog-item__product-description">Диаметр 15 см, высота 10 см</p>
+                    <p class="catalog-item__product-price">690 руб.</p>
+                  </div>
                 </li>
                 <li class="catalog-item">
                   <img class="catalog__image" src="img/photo-3.png" width="260" height="195" alt="Вязаный зайка">
-                  <h3>Большая корзина для игрушек</h3>
-                  <p>Диаметр 30 см, высота 30 см</p>
-                  <p>1500 руб.</p>
+                  <div class="catalog-item__product">
+                    <h3 class="catalog-item__product-name">Большая корзинка для игрушек</h3>
+                    <p class="catalog-item__product-description">Диаметр 30 см, высота 30 см</p>
+                    <p class="catalog-item__product-price">1500 руб.</p>
+                  </div>
                 </li>
               </ul>
 

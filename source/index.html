@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -15,16 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-                <a href="#">Вязание на заказ</a>
+                <a class="site-list__link" href="#">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
-                <a href="#">Поиск по сайту</a>
+                <a class="site-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
-                <a href="#">Корзина: пока пуста</a>
+                <a class="site-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </div>
@@ -36,24 +37,24 @@
 
       <section class="fast-main">
 
-        <h1 class="info">Милые штучки ручной работы для дома</h1>
+        <h1 class="fast-main__info">Милые штучки ручной работы для дома</h1>
 
 
-        <ul>
+        <ul class="fast-main__items">
           <li>
-              <button class="fast-main__toggle" type="button">Предметы интерьера</button>
+              <button class="fast-main__toggle toggle--one" type="button">Предметы интерьера</button>
           </li>
           <li>
-              <button class="fast-main__toggle" type="button">Детские игрушки</button>
+              <button class="fast-main__toggle toggle--two" type="button">Детские игрушки</button>
           </li>
         </ul>
 
       </section>
 
       <section class="product-week">
-        <h2>Вязаные корзинки</h2>
-        <h3>Товар недели</h3>
-        <p>Экологически чистая пряжа, ручная работа.
+        <h2 class="product-week__topic">Вязаные корзинки</h2>
+        <h3 class="product-week__banner">Товар недели</h3>
+        <p class="product-week__info">Экологически чистая пряжа, ручная работа.
           Доступны в шести расцветкахб и трех размерах.</p>
           <table class="product-week__list">
               <tr>
@@ -84,23 +85,23 @@
 
             <img class="product-week__triple-set" src="img/triple-set-mobile.png" width="260" height="315" alt="Вязаные корзинки">
 
-            <p>Цена: 990 руб.</p>
+            <p class="product-week__price">Цена: 990 руб.</p>
 
-            <button class="product-week_order" type="button">Заказать</button>
+            <button class="product-week__order" type="button">Заказать</button>
 
       </section>
 
       <section class="advantages">
 
-        <h2 class="">Коротко о нас:</h2>
+        <h2 class="advantages__about">Коротко о нас:</h2>
 
-        <ul class="advantages_list">
-          <li><span>цветок</span>Экологически чистые материалы</li>
-          <li><span>купюра</span>Скандинавский стиль по российской цене</li>
-          <li><span>сердце</span>Увеличивает лайки на фотографиях</li>
-          <li><span>клубок</span>Связано вручную с любовью и умилением</li>
-          <li><span>ракета</span>Поддержка отечественного производителя</li>
-          <li><span>подарок</span>Поставляется в подарочной упаковке</li>
+        <ul class="advantages__list">
+          <li class="advantages__item"><span>цветок</span>Экологически чистые материалы</li>
+          <li class="advantages__item"><span>купюра</span>Скандинавский стиль по российской цене</li>
+          <li class="advantages__item"><span>сердце</span>Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item"><span>клубок</span>Связано вручную с любовью и умилением</li>
+          <li class="advantages__item"><span>ракета</span>Поддержка отечественного производителя</li>
+          <li class="advantages__item"><span>подарок</span>Поставляется в подарочной упаковке</li>
         </ul>
 
       </section>
