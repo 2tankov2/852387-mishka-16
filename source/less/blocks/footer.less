@@ -28,3 +28,27 @@
   line-height: 0.95;
   text-align: left;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 772px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .social__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1150px;
+  }
+}

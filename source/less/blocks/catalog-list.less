@@ -3,3 +3,21 @@
   padding-left: 30px;
   list-style-type: none;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog-list {
+    width: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-list {
+    width: 1150px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+}
