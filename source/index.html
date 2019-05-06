@@ -9,9 +9,11 @@
   <body>
 
     <header class="page-header">
-      <a class="page-header_logo">
+      <div class="page-header_logo">
+      <a>
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
       </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -20,7 +22,7 @@
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-                <a class="site-list__link" href="#">Вязание на заказ</a>
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
             <li class="site-list__item">
                 <a class="site-list__link" href="#">Поиск по сайту</a>
@@ -97,16 +99,19 @@
 
       <section class="advantages">
 
-        <h2 class="advantages__about">Коротко о нас:</h2>
+        <div class="advantages__wapper">
 
-        <ul class="advantages__list">
-          <li class="advantages__item"><span>цветок</span>Экологически чистые материалы</li>
-          <li class="advantages__item"><span>купюра</span>Скандинавский стиль по российской цене</li>
-          <li class="advantages__item"><span>сердце</span>Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item"><span>клубок</span>Связано вручную с любовью и умилением</li>
-          <li class="advantages__item"><span>ракета</span>Поддержка отечественного производителя</li>
-          <li class="advantages__item"><span>подарок</span>Поставляется в подарочной упаковке</li>
-        </ul>
+          <h2 class="advantages__about">Коротко о нас:</h2>
+
+          <ul class="advantages__list">
+            <li class="advantages__item"><span>цветок</span>Экологически чистые материалы</li>
+            <li class="advantages__item"><span>купюра</span>Скандинавский стиль по российской цене</li>
+            <li class="advantages__item"><span>сердце</span>Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item"><span>клубок</span>Связано вручную с любовью и умилением</li>
+            <li class="advantages__item"><span>ракета</span>Поддержка отечественного производителя</li>
+            <li class="advantages__item"><span>подарок</span>Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
 
       </section>
 
@@ -114,6 +119,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__wapper">
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
             <ul class="social__list">
@@ -132,7 +138,7 @@
               <b class="copyright__text">Разработано:</b>
               <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>логотип HtmlАкадемии</span></a>
           </div>
-
+      </div>
     </footer>
 
   </body>

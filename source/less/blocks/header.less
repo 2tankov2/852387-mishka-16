@@ -1,11 +1,22 @@
 .page-header {
-  width: 320px;
   display: flex;
   flex-direction: column;
 }
 
+.page-header__logo {
+  width: 280px;
+}
+
 .page-header__logo-image {
+  display: block;
   padding: 22px 118px 22px 116px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-nav__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .main-nav__toggle {
@@ -30,7 +41,7 @@
 }
 
 .site-list__item {
-  padding: 32px 95px 30px 76px;
+  padding: 32px 65px 30px 36px;
   border-bottom: 1px solid #ececec;
   margin: 0;
   text-decoration: none;
@@ -46,6 +57,10 @@
   .page-header {
     width: 772px;
     margin: 0 auto;
+  }
+
+  .main-nav__wrapper {
+    width: 100%;
   }
 
   .main-nav__toggle {
@@ -88,6 +103,14 @@
   .site-list__item:nth-child(3),
   .site-list__item:nth-child(4) {
     align-self: flex-start;
+  }
+
+  .site-list__item:nth-child(3) {
+    margin-left: auto;
+  }
+
+  .site-list__item:nth-child(4) {
+    margin-left: 40px;
   }
 }
 
