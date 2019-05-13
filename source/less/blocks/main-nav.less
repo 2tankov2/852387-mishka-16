@@ -1,0 +1,32 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+
+  &--open {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

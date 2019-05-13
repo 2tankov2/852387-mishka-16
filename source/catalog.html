@@ -9,29 +9,44 @@
   <body class="inner-page">
 
       <header class="page-header">
-        <div class="page-header__logo">
-          <a href="index.html">
-            <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
-          </a>
-        </div>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
-                    <a class="site-list__link">Каталог товаров</a>
+        <nav class="main-nav">
+          <div class="page-header__logo-wapper">
+            <a class="page-header__logo" href="index.html">
+              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+            </a>
+          </div>
+
+          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Каталог товаров</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+                <li class="user-list__item">
+                    <a class="user-list__link" href="#">Поиск по сайту</a>
                 </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="form.html">Вязание на заказ</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Поиск по сайту</a>
-                </li>
-                <li class="site-list__item">
-                    <a class="site-list__link" href="#">Корзина: пока пуста</a>
+                <li class="user-list__item">
+                    <a class="user-list__link" href="#">Корзина: пока пуста</a>
                 </li>
               </ul>
-            </div>
+              <ul class="main-nav__list additional-list">
+                <li class="additional-list__item">
+                  <a class="additional-list__link" href="#">Новые поступления</a>
+                </li>
+                <li class="additional-list__item">
+                  <a class="additional-list__link" href="#">Распродажа</a>
+                </li>
+              </ul>
+
+              <p class="page-header_delivery-info">Бесплатная доставка по России</p>
+
           </nav>
 
         </header>
