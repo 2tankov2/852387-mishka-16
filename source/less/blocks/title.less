@@ -1,10 +1,30 @@
-.title {
-  width: 320px;
-  font-size: 27px;
-  line-height: 1.11;
+.container__title {
+  width: 100%;
   text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.11;
   background-color: #f1f1f1;
   padding-top: 76px;
   padding-bottom: 74px;
+  padding-left: 42px;
+  padding-right: 42px;
   margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .container__title {
+    width: 769px;
+    font-size: 43px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container__title {
+    width: 1150px;
+    font-size: 53px;
+  }
 }

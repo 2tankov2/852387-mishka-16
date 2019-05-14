@@ -2,61 +2,81 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
-      <a class="page-header_logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <div class="page-header__logo-wapper page-header__logo-wapper--active">
+            <a class="page-header__logo" href="#">
+              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+            </a>
+          </div>
+
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
                 <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-                <a class="site-list__link" href="#">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-                <a class="site-list__link" href="#">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-                <a class="site-list__link" href="#">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list user-list">
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Поиск по сайту</a>
+              </li>
+              <li class="user-list__item">
+                <a class="user-list__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
+            <ul class="main-nav__list additional-list">
+              <li class="additional-list__item">
+                <a class="additional-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="additional-list__item">
+                <a class="additional-list__link" href="#">Распродажа</a>
+              </li>
+            </ul>
+
+            <p class="page-header__delivery-info">Бесплатная доставка по России</p>
+        </nav>
 
     </header>
 
     <main class="page-main">
 
       <section class="fast-main">
-
-        <h1 class="fast-main__info">Милые штучки ручной работы для дома</h1>
-
+        <div class="fast-main__header">
+          <h1 class="fast-main__header-info">Милые штучки ручной работы для дома</h1>
+        </div>
 
         <ul class="fast-main__items">
-          <li>
-              <button class="fast-main__toggle toggle--one" type="button">Предметы интерьера</button>
+          <li class="fast-main__toggle">
+              <button class="fast-main__button toggle--one" type="button">Предметы интерьера</button>
           </li>
-          <li>
-              <button class="fast-main__toggle toggle--two" type="button">Детские игрушки</button>
+          <li class="fast-main__toggle">
+              <button class="fast-main__button toggle--two" type="button">Детские игрушки</button>
           </li>
         </ul>
 
       </section>
 
       <section class="product-week">
-        <h2 class="product-week__topic">Вязаные корзинки</h2>
-        <h3 class="product-week__banner">Товар недели</h3>
+        <div class="product-week_container">
+          <h2 class="product-week__topic">Вязаные корзинки</h2>
+          <h3 class="product-week__banner">Товар недели</h3>
+        </div>
         <p class="product-week__info">Экологически чистая пряжа, ручная работа.
           Доступны в шести расцветкахб и трех размерах.</p>
-          <table class="product-week__list">
+          <div class="product-week__wapper">
+            <table class="product-week__list">
               <tr>
                 <td class="product-week__value">
                   Цвет:
@@ -88,21 +108,24 @@
             <p class="product-week__price">Цена: 990 руб.</p>
 
             <button class="product-week__order" type="button">Заказать</button>
-
+          </div>
       </section>
 
       <section class="advantages">
 
-        <h2 class="advantages__about">Коротко о нас:</h2>
+        <div class="advantages__wapper">
 
-        <ul class="advantages__list">
-          <li class="advantages__item"><span>цветок</span>Экологически чистые материалы</li>
-          <li class="advantages__item"><span>купюра</span>Скандинавский стиль по российской цене</li>
-          <li class="advantages__item"><span>сердце</span>Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item"><span>клубок</span>Связано вручную с любовью и умилением</li>
-          <li class="advantages__item"><span>ракета</span>Поддержка отечественного производителя</li>
-          <li class="advantages__item"><span>подарок</span>Поставляется в подарочной упаковке</li>
-        </ul>
+          <h2 class="advantages__about">Коротко о нас:</h2>
+
+          <ul class="advantages__list">
+            <li class="advantages__item"><span>цветок</span>Экологически чистые материалы</li>
+            <li class="advantages__item"><span>купюра</span>Скандинавский стиль по российской цене</li>
+            <li class="advantages__item"><span>сердце</span>Увеличивает лайки на фотографиях</li>
+            <li class="advantages__item"><span>клубок</span>Связано вручную с любовью и умилением</li>
+            <li class="advantages__item"><span>ракета</span>Поддержка отечественного производителя</li>
+            <li class="advantages__item"><span>подарок</span>Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
 
       </section>
 
@@ -110,6 +133,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer__wapper">
         <div class="page-footer__social social">
           <b class="social__title">Давайте дружить!</b>
             <ul class="social__list">
@@ -128,8 +152,24 @@
               <b class="copyright__text">Разработано:</b>
               <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span>логотип HtmlАкадемии</span></a>
           </div>
-
+      </div>
     </footer>
 
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function() {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+    </script>
   </body>
 </html>

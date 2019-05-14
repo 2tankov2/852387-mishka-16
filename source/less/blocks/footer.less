@@ -1,12 +1,17 @@
 .page-footer {
-  width: 320px;
   text-align: center;
   padding-top: 39px;
   background-color: #f1f1f1;
 }
 
+.page-footer__wapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .social__list {
   list-style-type: none;
+  text-align: center;
 }
 
 .social__link,
@@ -26,5 +31,33 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 0.95;
-  text-align: left;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 772px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .page-footer__wapper {
+    width: 100%;
+  }
+
+  .social__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1150px;
+  }
 }
