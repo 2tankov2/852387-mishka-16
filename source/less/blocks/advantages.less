@@ -1,30 +1,107 @@
 .advantages {
-  width: 255px;
-  padding-left: 30px;
+  padding-left: 36px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 .advantages__list {
-  padding-left: 0;
+  padding-left: 2px;
   list-style-type: none;
 }
 
 .advantages__about {
-  width: 185px;
   height: 24px;
   font-size: 25px;
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  padding-top: 34px;
+  padding-top: 12px;
 }
 
 .advantages__item {
+
+  position: relative;
   height: 37px;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.18;
   text-align: left;
-  padding-top: 85px;
+  padding-top: 71px;
+}
+
+.advantages__item:first-child {
+  width: 180px;
+}
+
+.advantages__item:first-child::before {
+  content: url("../img/icon-feature-flower.svg");
+  position: absolute;
+  top: 17px;
+  left: 9px;
+}
+
+.advantages__item:nth-child(2) {
+  width: 200px;
+  padding-top: 86px;
+}
+
+.advantages__item:nth-child(2)::before {
+  content: url("../img/icon-feature-money.svg");
+  position: absolute;
+  top: 33px;
+  left: 1px;
+}
+
+.advantages__item:nth-child(3) {
+  width: 200px;
+  padding-top: 86px;
+}
+
+.advantages__item:nth-child(3)::before {
+  content: url("../img/icon-feature-heart.svg");
+  position: absolute;
+  top: 38px;
+  left: 8px;
+}
+
+.advantages__item:nth-child(4) {
+  width: 230px;
+  padding-top: 86px;
+}
+
+.advantages__item:nth-child(4)::before {
+  content: url("../img/icon-feature-ball.svg");
+  position: absolute;
+  top: 35px;
+  left: 4px;
+}
+
+.advantages__item:nth-child(5) {
+  width: 300px;
+  padding-top: 86px;
+}
+
+.advantages__item:nth-child(5)::before {
+  content: url("../img/icon-feature-rocket.svg");
+  position: absolute;
+  top: 36px;
+  left: -5px;
+}
+
+.advantages__item:last-child {
+  width: 250px;
+  padding-top: 86px;
+}
+
+.advantages__item:last-child::before {
+  content: url("../img/icon-feature-gift.svg");
+  position: absolute;
+
+  top: 34px;
+  left: 4px;
 }
 
 @media (min-width: @tablet-width) {

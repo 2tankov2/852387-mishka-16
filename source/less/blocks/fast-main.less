@@ -6,6 +6,7 @@
   background-position: top center;
   background-repeat: no-repeat;
   border: 0;
+  margin-top: -17px;
 }
 
 .fast-main__header {
@@ -17,16 +18,19 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  padding: 93px 39px 120px 39px;
+  padding: 90px 39px 123px 39px;
+  margin: 0;
 }
 
 .fast-main__items {
   width: 100%;
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .fast-main__button {
+  position: relative;
   width: 320px;
   height: 103px;
   color: white;
@@ -40,12 +44,53 @@
 }
 
 .toggle--one {
+
   background-color: #63d1bb;
-  margin-top: -15px;
+  margin-top: 0;
+}
+
+.toggle--one::after {
+  position: absolute;
+  content: url("../img/icon-interior.svg");
+  width: 40px;
+  height: 62px;
+  object-fit: contain;
+  opacity: 0.5;
+  color: #149080;
+  right: 36px;
+  top: 23px;
+}
+
+.toggle--one:hover::after {
+  opacity: 0.7;
+}
+
+.toggle--one:active::after {
+  opacity: 0.3;
 }
 
 .toggle--two {
   background-color: #56c3b2;
+}
+
+.toggle--two::after {
+  position: absolute;
+  content: url("../img/icon-toy.svg");
+  width: 40px;
+  height: 62px;
+  object-fit: contain;
+  opacity: 0.5;
+  color: #149080;
+  right: 45px;
+  top: 21px;
+}
+
+.toggle--two:hover::after {
+  opacity: 0.7;
+}
+
+.toggle--two:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
