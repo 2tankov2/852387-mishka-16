@@ -23,27 +23,25 @@
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+
+    .user-list__search,
+    .user-list__cart {
+      fill: #63d1bb;
+    }
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+
+    .user-list__search,
+    .user-list__cart {
+      opacity: 0.3;
+    }
   }
 
   .user-list__cart,
   .user-list__search {
     padding-right: 25px;
-  }
-
-  .user-list__search:hover line,
-  .user-list__search:hover circle,
-  .user-list__cart:hover polygon,
-  .user-list__cart:hover line {
-    stroke: #63d1bb;
-  }
-
-  .user-list__search:active,
-  .user-list__cart:active {
-    opacity: 0.3;
   }
 }
 
