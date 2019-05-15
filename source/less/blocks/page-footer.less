@@ -1,0 +1,32 @@
+.page-footer {
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.page-footer__wapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 772px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+
+  .page-footer__wapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1150px;
+  }
+}
