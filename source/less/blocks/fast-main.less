@@ -3,7 +3,7 @@
   margin: 0;
   object-fit: contain;
   background-image: url("/img/hero-mobile.png");
-  background-position: top center;
+  background-position: top -17px center;
   background-repeat: no-repeat;
   border: 0;
 }
@@ -17,13 +17,37 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  padding: 93px 39px 120px 39px;
+  padding: 90px 39px 123px 39px;
+  margin: 0;
 }
 
 .fast-main__items {
   width: 100%;
   list-style-type: none;
   padding-left: 0;
+  margin: 0;
+}
+
+.fast-main__toggle:first-child {
+  position: relative;
+  background-color: #63d1bb;
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+    box-shadow: 0 -5px 0 0  #59d5bc;
+  }
+}
+
+.fast-main__toggle:last-child {
+  position: relative;
+  background-color: #56c3b2;
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
+    box-shadow: 0 -5px 0 0  #46c1ae;
+  }
 }
 
 .fast-main__button {
@@ -37,15 +61,40 @@
   padding-left: 29px;
   border: 0;
   margin: 0;
+  background-color: inherit;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.toggle--one {
-  background-color: #63d1bb;
-  margin-top: -15px;
+.toggle--one::after {
+  position: absolute;
+  content: url("../img/icon-interior.svg");
+  width: 40px;
+  height: 62px;
+  object-fit: contain;
+  right: 36px;
+  top: 23px;
 }
 
-.toggle--two {
-  background-color: #56c3b2;
+.toggle--two::after {
+  position: absolute;
+  content: url("../img/icon-toy.svg");
+  width: 40px;
+  height: 62px;
+  object-fit: contain;
+  right: 45px;
+  top: 21px;
+}
+
+.toggle--one:hover::after,
+.toggle--two:hover::after {
+  opacity: 0.7;
 }
 
 @media (min-width: @tablet-width) {
