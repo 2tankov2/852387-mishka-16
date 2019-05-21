@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
+    <script async src="js/click.js"></script>
   </head>
   <body>
 
     <header class="page-header">
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="page-header__logo-wapper page-header__logo-wapper--active">
             <a class="page-header__logo" href="#">
-              <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+              <picture>
+                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Интернет-магазин Мишка">
+              </picture>
             </a>
           </div>
 
-          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
+          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -61,7 +66,7 @@
 
       <section class="fast-main">
         <div class="fast-main__header">
-          <h1 class="fast-main__header-info">Милые штучки ручной<br> работы для дома</h1>
+          <h1 class="fast-main__header-info">Милые штуки ручной<br> работы для дома</h1>
         </div>
 
         <ul class="fast-main__items">
@@ -109,9 +114,11 @@
                     </td>
                   </tr>
             </table>
-
-            <img class="product-week__triple-set" src="img/triple-set-mobile.png" width="260" height="315" alt="Вязаные корзинки">
-
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/triple-set-desktop1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img class="product-week__triple-set" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+            </picture>
             <p class="product-week__price">Цена: 990 руб.</p>
 
             <button class="product-week__order" type="button">Заказать</button>
@@ -159,6 +166,10 @@
 
     <footer class="page-footer">
       <div class="page-footer__wapper">
+        <a class="page-footer__logo" href="#">
+          <img class="page-footer__logo" src="img/logo-footer.svg" width="102" height="34" alt="Интернет-магазин Мишка">
+        </a>
+
         <div class="social">
 
             <ul class="social-list">
@@ -183,30 +194,13 @@
             </ul>
           </div>
           <div class="copyright">
-              <p class="copyright__text">Разработано</p>
               <a class ="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <p class="copyright__text">Разработано</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
                 <span class="visually-hidden">логотип HtmlАкадемии</span>
               </a>
           </div>
       </div>
     </footer>
-
-    <script>
-        var navMain = document.querySelector('.main-nav');
-        var navToggle = document.querySelector('.main-nav__toggle');
-
-        navMain.classList.remove('main-nav--nojs');
-
-        navToggle.addEventListener('click', function() {
-          if (navMain.classList.contains('main-nav--closed')) {
-            navMain.classList.remove('main-nav--closed');
-            navMain.classList.add('main-nav--opened');
-          } else {
-            navMain.classList.add('main-nav--closed');
-            navMain.classList.remove('main-nav--opened');
-          }
-        });
-    </script>
   </body>
 </html>

@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     width: 772px;
@@ -23,6 +27,19 @@
   .page-footer__wapper {
     width: 100%;
     flex-direction: row;
+  }
+
+  .page-footer__logo {
+    display: flex;
+    margin: auto;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
