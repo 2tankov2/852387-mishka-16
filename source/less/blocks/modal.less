@@ -9,6 +9,7 @@
   font-size: 17px;
   box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   background-color: #ffffff;
+  color: #444444;
 }
 
 .modal-order {
@@ -26,6 +27,7 @@
   width: 150px;
   margin: auto;
   margin-top: 36px;
+  color: black;
 }
 
 .radio {
@@ -61,13 +63,20 @@ label {
   height: 52px;
   color: #444444;
   font-size: 17px;
-  border: 1px solid #444444;
+  border: 2px solid #444444;
   padding: 20px 52px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.1;
+  }
 }
 
 .radio:checked + label {
   border-color: #63d1bb;
+  opacity: 1;
 }
+
 
 .modal-order__button {
   width: 260px;
@@ -84,9 +93,10 @@ label {
 
 
 @media (min-width: @tablet-width) {
-  .modal {
+  .modal-order {
     width: 566px;
     height: 336px;
+    padding: 0;
   }
 
   .modal-order__info {
