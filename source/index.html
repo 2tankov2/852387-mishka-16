@@ -10,7 +10,7 @@
       // Picture element HTML shiv
       document.createElement("picture");
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
 
@@ -195,14 +195,9 @@
         </div>
         <div class="contacts-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCfXFGOM" allowfullscreen="true"></iframe>
-            <picture>
-              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/map-tablet@1.jpg 1x, img/map-tablet@2x.jpg 2x">
-              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            </picture>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCfXFGOM" width="322" allowfullscreen="true"></iframe>
         </div>
-        <a class="button contacts-message" href="#">Напишите нам</a>
+        <a class="button button--contacts-message" href="#">Напишите нам</a>
       </section>
 
     </main>
