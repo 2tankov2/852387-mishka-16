@@ -6,7 +6,11 @@
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
     <script async src="js/click.js"></script>
-    <script src="picturefill.js" async></script>
+    <script>
+      // Picture element HTML shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
 
@@ -122,7 +126,7 @@
             </picture>
             <p class="product-week__price">Цена: 990 руб.</p>
 
-            <a class="product-week__order" href="#modal">Заказать</a>
+            <a class="product-week__order button" href="#modal">Заказать</a>
           </div>
       </section>
 
@@ -162,6 +166,44 @@
 
       </section>
 
+      <section class="reviews">
+        <h2 class="reviews-title">Отзывы</h2>
+        <p class="reviews-item">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <p class="review-author">Анастасия Красильникова
+          <a class="review-author__contact" target="_blank" href="#">@misssssiskras</a>
+        </p>
+        <div class="reviews-button">
+          <button class="button button--back" type="button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="button button--next" type="button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+        <a class="button reviews-message" href="#">Написать</a>
+      </section>
+
+      <section class="contacts">
+        <h3 class="contacts-topic">Контакты</h2>
+        <div class="contacts-item">
+          <p class="contacts-item__info">e-mail:</p>
+          <a href="#">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts-item">
+          <p class="contacts-item__info">адрес:</p>
+          <p class="contacts-item__info">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+        </div>
+        <div class="contacts-map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCfXFGOM" allowfullscreen="true"></iframe>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322" height="457" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </picture>
+        </div>
+        <a class="button contacts-message" href="#">Напишите нам</a>
+      </section>
 
     </main>
 
