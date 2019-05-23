@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link href="css/style.css" rel="stylesheet">
-    <script async src="js/click.js"></script>
+
     <script>
       // Picture element HTML shiv
       document.createElement("picture");
@@ -15,7 +15,7 @@
   <body>
 
     <header class="page-header">
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="page-header__logo-wapper page-header__logo-wapper--active">
             <a class="page-header__logo" href="#">
               <picture>
@@ -26,7 +26,7 @@
             </a>
           </div>
 
-          <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -126,7 +126,7 @@
             </picture>
             <p class="product-week__price">Цена: 990 руб.</p>
 
-            <a class="product-week__order button" href="#modal">Заказать</a>
+            <a class="product-week__order button button--order" href="#modal">Заказать</a>
           </div>
       </section>
 
@@ -195,7 +195,7 @@
         </div>
         <div class="contacts-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCfXFGOM" width="322" allowfullscreen="true"></iframe>
+            <iframe class="contacts-map__yandex" src="https://yandex.ru/map-widget/v1/-/CCfXFGOM" allowfullscreen="true"></iframe>
         </div>
         <a class="button button--contacts-message" href="#">Напишите нам</a>
       </section>
@@ -271,6 +271,29 @@
 
       });
     </script>
+    <script>
 
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+
+          navToggle.classList.remove('main-nav__toggle--closed');
+          navToggle.classList.add('main-nav__toggle--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+
+
+          navToggle.classList.add('main-nav__toggle--closed');
+          navToggle.classList.remove('main-nav__toggle--opened');
+        }
+      });
+    </script>
   </body>
 </html>

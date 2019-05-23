@@ -15,7 +15,7 @@
   <body class="inner-page">
 
       <header class="page-header">
-        <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <div class="page-header__logo-wapper page-header__logo-wapper--active">
             <a class="page-header__logo" href="index.html">
               <picture>
@@ -26,7 +26,7 @@
             </a>
           </div>
 
-          <button class="main-nav__toggle main-nav__toggle--opened main-nav__toggle--closed" type="button">
+          <button class="main-nav__toggle main-nav__toggle--opened" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
 
@@ -137,6 +137,24 @@
 
           </section>
 
+          <section class="process">
+            <div class="process__wapper">
+              <h3 class="process-topic">
+                <svg class="process-topic__video" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path fill="#63d1bb" d="M26 15l6-4v16l-6-4v-8zm-2 0v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4v-8a4 4 0 0 1 4-4h10a2 2 0 0 1 2-2V7H5a1 1 0 1 1 0-2h12a1 1 0 0 1 1 1v3a2 2 0 0 1 2 2 4 4 0 0 1 4 4zm-12 0H4v8h8v-8zm8 1a1 1 0 0 0-1-1h-4a1 1 0 1 0 0 2h4a1 1 0 0 0 1-1z"/></svg>
+                  Процесс производства
+              </h3>
+              <div class="process-video">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки">
+                </picture>
+              </div>
+              <p class="process-info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <a class="button button--process" href="#">Сделать заказ</a>
+            </div>
+          </section>
+
         </main>
 
         <footer class="page-footer">
@@ -208,5 +226,29 @@
 
           });
         </script>
+        <script>
+
+            var navMain = document.querySelector('.main-nav');
+            var navToggle = document.querySelector('.main-nav__toggle');
+
+            navMain.classList.remove('main-nav--nojs');
+
+            navToggle.addEventListener('click', function() {
+              if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+
+                navToggle.classList.remove('main-nav__toggle--closed');
+                navToggle.classList.add('main-nav__toggle--opened');
+              } else {
+                navMain.classList.add('main-nav--closed');
+                navMain.classList.remove('main-nav--opened');
+
+
+                navToggle.classList.add('main-nav__toggle--closed');
+                navToggle.classList.remove('main-nav__toggle--opened');
+              }
+            });
+          </script>
   </body>
 </html>
