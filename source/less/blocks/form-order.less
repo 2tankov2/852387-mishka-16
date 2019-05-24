@@ -4,8 +4,42 @@
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
-  text-align: left;
   padding-left: 30px;
   padding-right: 48px;
   color: #444444;
+}
+
+.form-order__title {
+  position: relative;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 0.94;
+  color: #63d1bb;
+  text-transform: uppercase;
+
+  &::after {
+    content: "________________________";
+    position: absolute;
+    top: -7px;
+    left: 63px;
+  }
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+}
+
+.form-order__type {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.type,
+.color,
+.name {
+  display: flex;
+  flex-direction: column;
 }

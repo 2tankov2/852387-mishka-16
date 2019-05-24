@@ -78,52 +78,50 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="form-order__type">
               <p class="form-order__title">Тип</p>
-              <label class="type">
-                <input type="radio" name="type" value="accessory" checked>Аксессуар для интерьера
+              <div class="type">
+                <label class="type-radio">
+                  <input type="radio" name="type" value="accessory" checked>
+                    <p class="type-radio__text">Аксессуар для интерьера</p>
                 </label>
-              <label class="type">
-                <input type="radio" name="type" value="toy">Детская игрушка
-              </label>
+                <label class="type-radio">
+                  <input type="radio" name="type" value="toy">
+                    <p class="type-radio__text">Детская игрушка</p>
+                </label>
+              </div>
             </div>
             <div class="form-order__color">
               <p class="form-order__title">Цвет</p>
-              <label class="color">
-                <input type="checkbox" name="color" checked>Белый
-              </label>
-              <label class="color">
-                <input type="checkbox" name="color" checked>Серый
-              </label>
-              <label>
-                <input type="checkbox" name="color">«Тиффани»
-              </label>
-              <label class="color">
-                <input type="checkbox" name="color">Черный
-              </label>
-              <label class="color">
-                <input type="checkbox" name="color">Розовый
-              </label>
-              <label>
-                <input type="checkbox" name="color">Оранжевый
-              </label>
+              <div class="color">
+                <label class="color__text">
+                  <input type="checkbox" name="color" checked>Белый
+                </label>
+                <label class="color__text">
+                  <input type="checkbox" name="color" checked>Серый
+                </label>
+                <label class="color__text">
+                  <input type="checkbox" name="color">«Тиффани»
+                </label>
+                <label class="color__text">
+                  <input type="checkbox" name="color">Черный
+                </label>
+                <label class="color__text">
+                  <input type="checkbox" name="color">Розовый
+                </label>
+                <label class="color__text">
+                  <input type="checkbox" name="color">Оранжевый
+                </label>
+              </div>
             </div>
             <div class="form-order__name">
               <p class="form-order__title">Фио</p>
-              <label>Имя:
-                <br>
-                <input type="text" name="name" placeholder="Введите ваше имя*">
-              </label>
-              </br>
-              <label>
-                Фамилия:
-                </br>
-                <input type="text" name="name" placeholder="Укажите фамилию*">
-              </label>
-              </br>
-              <label>
-                Отчество:
-                </br>
-                <input type="text" name="name" placeholder="Отчество, если желаете">
-              </label>
+              <div class="name">
+                <label for="name__first">Имя:</label>
+                <input type="text" id="first-name" name="name" placeholder="Введите ваше имя*">
+                <label for="name__second">Фамилия:</label>
+                <input type="text" id="second-name" name="name" placeholder="Укажите фамилию*">
+                <label for="name__third">Отчество:</label>
+                <input type="text" id="third-name" name="name" placeholder="Отчество, если желаете">
+              </div>
             </div>
             <div class="form-order__contact">
               <p class="form-order__title">Тел</p>
