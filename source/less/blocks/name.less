@@ -1,11 +1,13 @@
-.name input {
+.name input,
+input[type="tel"],
+input[type="mail"] {
   padding: 15px 0 14px 0;
   border: 0;
 
   box-shadow: inset 0 -2px 0 0 black;
 
   &::placeholder {
-    color: rgba(68, 68, 68, 0.3);
+    color: rgba(68, 68, 68, 1.1);
   }
 
   &:hover,
@@ -14,11 +16,46 @@
   }
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="mail"] {
   color: #444444;
   font-weight: normal;
 }
 
 .name__item {
   margin-top: 24px;
+}
+
+input[type="tel"],
+input[type="mail"] {
+
+  width: 260px;
+}
+
+input[type="tel"] {
+  background-image: url("../../img/icon-phone.svg");
+  background-position: 220px center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+input[type="mail"] {
+  background-image: url("../../img/icon-mail.svg");
+  background-position: 220px center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.form-order__commit textarea {
+  box-shadow: inset 0 -2px 0 0 black;
+  border: solid 2px #444444;
+  background-color: white;
+  color: #444444;
+  font-weight: normal;
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
