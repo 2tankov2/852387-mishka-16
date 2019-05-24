@@ -125,25 +125,27 @@
               <fieldset class="form-order__name">
                 <legend class="form-order__title">Фио</legend>
                 <div class="name">
-                  <label for="name__first">Имя:</label>
+                  <label class="name__item" for="name__first">Имя:</label>
                   <input type="text" id="first-name" name="name" placeholder="Введите ваше имя*">
-                  <label for="name__second">Фамилия:</label>
+                  <label class="name__item" for="name__second">Фамилия:</label>
                   <input type="text" id="second-name" name="name" placeholder="Укажите фамилию*">
-                  <label for="name__third">Отчество:</label>
+                  <label class="name__item" for="name__third">Отчество:</label>
                   <input type="text" id="third-name" name="name" placeholder="Отчество, если желаете">
                 </div>
               </fieldset>
             </div>
-            <div>
-              <fieldset class="form-order__contact">
+            <div class="form-order__contacts">
+              <fieldset class="form-order__tel">
                 <legend class="form-order__title">Тел</legend>
                 <input type="tel" name="contact" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <p class="form-order__title">E-mail</p>
+              </fieldset>
+              <fieldset class="form-order__mail">
+                <legend class="form-order__title">E-mail</legend>
                 <input type="mail" name="contact" placeholder="Ваш Email*">
               </fieldset>
             </div>
             <div>
-              <fieldset class="form-order__comment">
+              <fieldset class="form-order__commit">
                 <legend class="form-order__title">Доп</legend>
                 <textarea name="comment" rows="4" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </fieldset>
