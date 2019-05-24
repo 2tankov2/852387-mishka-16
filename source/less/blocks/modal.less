@@ -37,7 +37,7 @@
   margin: 10px 0 0 7px;
 }
 
-.radio + label {
+.radio + .radio__name {
   position: relative;
   padding: 0;
   cursor: pointer;
@@ -50,12 +50,12 @@
   margin: 30px auto;
 }
 
-label:nth-child(4) {
+.radio__name:nth-child(4) {
   margin-left: 7px;
   margin-right: 7px;
 }
 
-label {
+.radio__name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ label {
   }
 }
 
-.radio:checked + label {
+.radio:checked + .radio__name {
   border-color: #63d1bb;
   opacity: 1;
 }
@@ -104,7 +104,7 @@ label {
     width: 400px;
   }
 
-  label {
+  .radio__name {
     width: 112px;
   }
 }
