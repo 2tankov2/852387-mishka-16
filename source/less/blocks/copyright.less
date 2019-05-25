@@ -1,11 +1,7 @@
 
 .copyright {
-  width: 190px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 25px;
 
   &:active {
     opacity: 0.3;
@@ -13,12 +9,18 @@
 }
 
 .copyright__link {
+  width: 186px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   text-decoration: none;
   color: black;
-  margin: 18px;
+  margin: 22px  auto;
   fill: #63d1bb;
+
+  svg {
+    margin-top: -6px;
+  }
 
   &:hover,
   &:active {
@@ -31,7 +33,6 @@
   font-weight: bold;
   line-height: 0.95;
   text-align: left;
-  padding-top: 28px;
   margin: 0;
 
   &:hover {

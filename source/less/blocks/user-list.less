@@ -33,6 +33,7 @@
     .user-list__search,
     .user-list__cart {
       fill: #63d1bb;
+      opacity: 1;
     }
   }
 
@@ -50,27 +51,34 @@
   .user-list__item {
     display: flex;
     justify-content: flex-end;
-    padding-left: 30px;
     border: none;
     border-left: 1px solid #ececec;
 
     &:first-child {
-      padding-right: 20px;
+      padding-right: 3px;
     }
 
     &:last-child {
-      padding-right: 52px;
+      padding-right: 54px;
     }
   }
 
-  .user-list__cart {
-    padding-right: 31px;
+  .user-list__cart-info {
+    padding-bottom: 3px;
   }
 
   .user-list {
     display: flex;
     margin-left: auto;
     order: 1;
+  }
+
+  .user-list__link .user-list__search {
+    padding-right: 27px;
+  }
+
+  .user-list__link .user-list__cart {
+    padding-right: 30px;
   }
 
   .user-list__search-info {
