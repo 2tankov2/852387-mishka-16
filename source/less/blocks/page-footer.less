@@ -17,16 +17,23 @@
 @media (min-width: @tablet-width) {
   .page-footer {
     width: 772px;
+  }
+
+  .page-footer__wapper {
     display: flex;
     flex-direction: row;
     margin: auto;
     margin-top: 50px;
     justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
   }
 
-  .page-footer__wapper {
-    width: 100%;
-    flex-direction: row;
+  .page-footer__logo,
+  .social,
+  .copyright {
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .page-footer__logo {
