@@ -148,7 +148,9 @@
   }
 
   .fast-main__toggle {
+    display: flex;
     width: 334px;
+    flex-grow: 1;
     position: relative;
 
     .toggle--one::after {
@@ -180,9 +182,10 @@
 @media (min-width: @desktop-width) {
   .fast-main {
     width: 1150px;
-    margin-top: -57px;
+    margin-top: -59px;
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-size: contain;
+    background-position-y: top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/hero-desktop@2x.jpg");
@@ -196,14 +199,23 @@
     line-height: 1.08;
     padding-left: 250px;
     padding-right: 250px;
+    padding-top: 27px;
   }
 
   .fast-main__items {
     width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    box-sizing: border-box;
   }
 
   .fast-main__button {
     padding-right: 377px;
-    padding-left: 37px;
+    padding-left: 38px;
+    padding-top: 29px;
+  }
+
+  .fast-main__toggle {
+    width: 525px;
   }
 }

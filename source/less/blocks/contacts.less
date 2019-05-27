@@ -127,3 +127,39 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    width: 1150px;
+    position: relative;
+  }
+
+  .contacts__wapper {
+    flex-direction: column;
+    margin-left: 195px;
+  }
+
+  .contacts-topic {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: 174px;
+    margin-top: 127px;
+
+    &::after {
+      left: -89px;
+      top: 26px;
+    }
+  }
+
+  .contacts-item:last-child {
+    margin-top: -46px;
+  }
+
+  .contacts-map {
+    position: absolute;
+    right: 80px;
+    top: 70px;
+    width: 525px;
+    height: 457px;
+  }
+}

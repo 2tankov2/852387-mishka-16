@@ -54,7 +54,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/review@2x.jpg");
-      background-size: 700px auto;
+      background-size: 350px auto;
     }
   }
 
@@ -90,10 +90,15 @@
     order: 3;
   }
 
-  .review-author,
-  .review-contact {
+  .review-author {
     font-size: 18px;
     line-height: 1.33;
+    padding-bottom: 5px;
+  }
+
+  .review-contact {
+    font-size: 17px;
+    line-height: 1.76;
     padding-bottom: 5px;
   }
 
@@ -103,5 +108,44 @@
 
   .button--reviews-message {
     order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1070px;
+    margin-left: 80px;
+    height: 457px;
+  }
+
+  .reviews__wapper {
+    width: 876px;
+    margin-left: 114px;
+    margin-top: 26px;
+  }
+
+  .reviews-title {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: -2px;
+  }
+
+  .reviews-item {
+    padding-right: 104px;
+    margin-bottom: 25px;
+  }
+
+  .reviews__author-contact {
+    padding-top: 0;
+  }
+
+  .review-author {
+    font-size: 17px;
+    line-height: 1.41;
+    margin-bottom: 0;
+  }
+
+  .reviews-button {
+    margin-top: 11px;
   }
 }
