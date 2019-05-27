@@ -8,17 +8,41 @@
   font-size: 27px;
   line-height: 1.11;
   background-color: #f1f1f1;
-  padding-top: 76px;
-  padding-bottom: 74px;
-  padding-left: 36px;
+  padding-top: 71px;
+  padding-bottom: 77px;
+  padding-left: 33px;
   padding-right: 36px;
   margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .container__title {
+    position: relative;
     width: 769px;
     font-size: 43px;
+    margin-top: -67px;
+    border-top: 1px solid #ececec;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 91%;
+
+      height: 24px;
+      background: url("../../img/bg-zigzag-fill.svg") 0 0 repeat-x;
+      background-position: left -2px bottom -12px;
+      background-size: cover;
+      z-index: 10;
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .title {
+    font-size: 43px;
+    line-height: 1.16;
+    padding-top: 96px;
+    z-index: 1;
   }
 }
 

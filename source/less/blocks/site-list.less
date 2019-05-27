@@ -31,6 +31,13 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  .site-list__item {
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
@@ -40,6 +47,7 @@
     padding: 0;
     padding-left: 49px;
     order: 2;
+    z-index: 1;
   }
 
   .site-list__item {
