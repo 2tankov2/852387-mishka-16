@@ -13,7 +13,6 @@
 }
 
 .form-order__title {
-  position: relative;
   font-size: 17px;
   font-weight: bold;
   line-height: 0.94;
@@ -99,4 +98,39 @@ label {
   color: #444444;
   margin-top: 9px;
   margin-left: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order {
+    width: 772px;
+  }
+
+  .form-order__info {
+    font-size: 17px;
+    line-height: 1.76;
+    padding-left: 50px;
+    padding-right: 55px;
+    padding-top: 58px;
+  }
+
+  label {
+    font-size: 19px;
+    line-height: 0.95;
+  }
+
+  .form-order__type,
+  .form-order__name,
+  .form-order__contact,
+  .form-order__commit {
+    border: none;
+    margin-top: 77px;
+    margin-left: 51px;
+  }
+
+  .form-order__color {
+    border: none;
+    margin-top: 84px;
+    margin-left: 51px;
+    background-color: #ececec;
+  }
 }

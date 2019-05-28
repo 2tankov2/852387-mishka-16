@@ -60,3 +60,36 @@
 .color__text input:active + .checkmark::before {
   opacity: 0.3;
 }
+
+@media (min-width: @tablet-width) {
+  .color {
+    margin-left: 108px;
+    margin-top: -42px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .checkmark {
+    width: 120px;
+    padding-left: 140px;
+    margin-bottom: 39px;
+
+    &::before {
+      top: -15px;
+      left: 58px;
+      height: 48px;
+      width: 50px;
+    }
+
+    &::after {
+      left: 70px;
+      top: -2px;
+      width: 28px;
+      height: 16px;
+    }
+  }
+}
