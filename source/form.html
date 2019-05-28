@@ -28,7 +28,6 @@
           <button class="main-nav__toggle main-nav__toggle--closed" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
                     <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -78,8 +77,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="form-order__type">
-                <div>
-                  <legend class="form-order__title">Тип</legend>
+                <legend class="form-order__title">Тип</legend>
                     <div class="type">
                       <label class="type-radio">
                         <input type="radio" name="type" value="accessory" checked>
@@ -90,13 +88,11 @@
                         <p class="type-radio__text">Детская игрушка</p>
                       </label>
                     </div>
-                </div>
             </fieldset>
 
 
             <fieldset class="form-order__color">
-              <div>
-                <legend class="form-order__title">Цвет</legend>
+              <legend class="form-order__title form-order__title--color">Цвет</legend>
                 <div class="color">
                   <label class="color__text">
                     <input type="checkbox" name="color" checked>
@@ -123,12 +119,10 @@
                     <p class="checkmark">Оранжевый</p>
                   </label>
                 </div>
-              </div>
             </fieldset>
 
             <fieldset class="form-order__name">
-              <div>
-                <legend class="form-order__title">Фио</legend>
+              <legend class="form-order__title form-order__title--name">Фио</legend>
                 <div class="name">
                   <label class="name__item" for="name__first">Имя:</label>
                   <input type="text" id="first-name" name="name" placeholder="Введите ваше имя*">
@@ -137,33 +131,30 @@
                   <label class="name__item" for="name__third">Отчество:</label>
                   <input type="text" id="third-name" name="name" placeholder="Отчество, если желаете">
                 </div>
-              </div>
             </fieldset>
 
             <div class="form-order__contacts">
-              <fieldset class="form-order__contact  form-order__contact--tel">
+              <fieldset class="form-order__contact">
+                <legend class="form-order__title form-order__title--tel">Тел</legend>
                 <div class="form-order__wapper">
-                  <legend class="form-order__title">Тел</legend>
                   <input type="tel" name="contact" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24.829" height="24.333"><path d="M17.321 24.333h-1.115c-4.904-.58-8.497-2.857-11.11-5.772C2.473 15.637.402 11.875 0 6.817V5.459c.091-.921.544-1.55 1.067-2.086.65-.666 1.63-1.522 2.522-1.553.659-.022 1.78.451 2.232 1.066.388.53.595 1.59.775 2.378.185.797.6 1.95.485 2.717-.176 1.196-1.764 1.703-2.231 2.572 1.551 3.721 4.089 6.456 7.472 8.345.847-.465 1.595-1.864 2.767-1.892.428-.012.972.209 1.406.34.477.143.891.326 1.311.484.705.266 1.957.621 2.378 1.213.433.61.681 1.608.581 2.231-.194 1.234-2.227 2.603-3.444 3.059zM12.529 1.528c5.949 0 10.771 4.822 10.771 10.771h1.529C24.829 5.507 19.323 0 12.529 0v1.528z"/><path d="M12.529 9.327v1.552a1.42 1.42 0 0 1 1.421 1.42h1.553a2.973 2.973 0 0 0-2.974-2.972zM12.529 6.246a6.054 6.054 0 0 1 6.056 6.054h1.588a7.642 7.642 0 0 0-7.644-7.641v1.587z"/></svg>
                 </div>
               </fieldset>
-              <fieldset class="form-order__contact form-order__contact--mail">
+              <fieldset class="form-order__contact">
+                <legend class="form-order__title form-order__title--mail">E-mail</legend>
                 <div class="form-order__wapper">
-                  <legend class="form-order__title">E-mail</legend>
                   <input type="mail" name="contact" placeholder="Ваш Email*">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><path d="M28 5H4a4 4 0 0 0-4 4v13a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4V9a4 4 0 0 0-4-4zM2 10.25l6.999 5.25L2 20.75v-10.5zM30 22c0 1.104-.898 2-2 2H4c-1.103 0-2-.896-2-2l7.832-5.875 4.368 3.277a3 3 0 0 0 3.599 0l4.369-3.277L30 22zm0-1.25l-7-5.25 7-5.25v10.5zm-12.801-2.148c-.35.263-.763.4-1.199.4s-.851-.139-1.2-.4L10.665 15.5l-.833-.625L2 9.001V9c0-1.103.897-2 2-2h24c1.102 0 2 .897 2 2l-12.801 9.602z"/></svg>
                 </div>
               </fieldset>
             </div>
             <div>
               <fieldset class="form-order__commit">
-                <legend class="form-order__title">Доп</legend>
-                <textarea name="commit" rows="4" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                <legend class="form-order__title form-order__title--commit">Доп</legend>
+                <textarea name="commit" rows="5" cols="33" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </fieldset>
             </div>
 
-            <p class="form-order__note"><sup>*</sup>Поля обязательны для заполнения</p>
+            <p class="form-order__note">*Поля обязательны для заполнения</p>
 
             <input class="button button--order" type="submit" value="Отправить заказ">
           </form>
