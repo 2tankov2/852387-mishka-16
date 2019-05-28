@@ -3,7 +3,17 @@
 }
 
 .name input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   padding: 14px 0 18px 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.name-it {
+  display: flex;
+  flex-direction: column;
 }
 
 .name input,
@@ -84,5 +94,54 @@ input[type="mail"] {
   &:hover,
   &:active {
     border-color: #62d1ba;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .name {
+    margin-left: 167px;
+    margin-right: 23px;
+    margin-top: -44px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .name-it {
+    flex-direction: row;
+    margin-bottom: 17px;
+  }
+
+  input[type="text"] {
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-left: 24px;
+
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+      padding-bottom: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  input[type="tel"],
+  input[type="mail"] {
+    width: 501px;
+    background-color: #f1f1f1;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+      padding-left: 17px;
+    }
+  }
+
+  input[type="tel"] {
+    background-position: top 18px  right 26px;
+  }
+
+  input[type="mail"] {
+    background-position: top 19px  right 22px;
   }
 }
