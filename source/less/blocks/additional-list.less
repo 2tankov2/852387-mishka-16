@@ -20,9 +20,24 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .additional-list {
+    z-index: 1;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .additional-list {
     display: flex;
+    justify-content: flex-start;
     order: 4;
+    font-size: 15px;
+    line-height: 1.61;
+    padding-left: 50px;
+    padding-top: 18px;
+  }
+
+  .additional-list__item {
+    padding-right: 62px;
   }
 }

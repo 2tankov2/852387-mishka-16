@@ -1,6 +1,6 @@
 .social {
   width: 260px;
-  border-bottom: 2px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 25px;
   margin: auto;
   display: flex;
@@ -8,19 +8,18 @@
   justify-content: center;
 }
 
+
 .social-list {
-  width: 141px;
+  width: 140px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0;
-  margin: 0 auto;
+  margin: 0 62px 0 56px;
+  align-items: center;
+  padding-left: 0;
 }
 
 .social-list__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
 
@@ -34,10 +33,26 @@
 }
 
 @media (min-width: @tablet-width) {
+  .social {
+    margin-left: 100px;
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 38px;
+  }
+
   .social-list {
     display: flex;
     flex-direction: row;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    width: 141px;
+    margin-left: 268px;
+    padding-left: 79px;
   }
 }

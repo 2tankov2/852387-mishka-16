@@ -1,0 +1,167 @@
+.name {
+  margin-top: 7px;
+}
+
+.name input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 14px 0 18px 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.name-it {
+  display: flex;
+  flex-direction: column;
+}
+
+.name input,
+input[type="tel"],
+input[type="mail"] {
+  border: 0;
+
+  box-shadow: inset 0 -2px 0 0 black;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 1.1);
+  }
+
+  &:hover,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 #62d1ba;
+  }
+}
+
+input[type="text"]::placeholder,
+input[type="mail"]::placeholder,
+textarea::placeholder {
+
+  color: #444444;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 1.06;
+  opacity: 0.3;
+}
+
+.name__item {
+  margin-top: 23px;
+}
+
+input[type="tel"]::placeholder {
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 0.95;
+  color: #444444;
+  opacity: 0.3;
+}
+
+input[type="tel"] {
+  width: 260px;
+  padding: 22px 0 18px 0;
+
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: top 18px right 7px;
+
+  &:hover,
+  &:active {
+    background-image: url("../../img/icon-phone1.svg");
+  }
+}
+
+input[type="mail"] {
+  width: 260px;
+  padding: 24px 0 17px 0;
+
+  background-image: url("../../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: top 20px right 4px;
+
+  &:hover,
+  &:active {
+    background-image: url("../../img/icon-mail1.svg");
+  }
+}
+
+.form-order__commit textarea {
+  border: solid 2px #444444;
+  background-color: white;
+  color: #444444;
+  font-weight: normal;
+  resize: vertical;
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .name {
+    margin-left: 167px;
+    margin-right: 23px;
+    margin-top: -44px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+  }
+
+  .name-it {
+    flex-direction: row;
+    margin-bottom: 17px;
+  }
+
+  input[type="text"] {
+    padding-left: 16px;
+    margin-top: 8px;
+    margin-left: 24px;
+
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+      padding-bottom: 18px;
+      margin-top: 10px;
+    }
+  }
+
+  input[type="tel"],
+  input[type="mail"] {
+    width: 501px;
+    background-color: #f1f1f1;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 0.95;
+      padding-left: 17px;
+    }
+  }
+
+  input[type="tel"] {
+    background-position: top 18px  right 26px;
+  }
+
+  input[type="mail"] {
+    background-position: top 19px  right 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .name {
+    margin-left: 116px;
+    margin-right: 195px;
+  }
+
+  input[type="tel"],
+  input[type="mail"] {
+    width: 700px;
+  }
+
+  input[type="tel"] {
+    background-position: top 18px  right 8px;
+  }
+
+  input[type="mail"] {
+    background-position: top 19px  right 4px;
+  }
+}

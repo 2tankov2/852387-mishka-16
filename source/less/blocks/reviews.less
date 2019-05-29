@@ -1,0 +1,151 @@
+.reviews {
+  width: 320px;
+  padding-left: 57px;
+  margin-bottom: 44px;
+}
+
+.reviews-title {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 27px;
+}
+
+.reviews-item {
+  font-size: 15px;
+  text-align: left;
+  color: #444444;
+  padding-right: 55px;
+  font-weight: normal;
+  line-height: 2;
+  margin-bottom: 27px;
+}
+
+.review-author {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.41;
+  margin-bottom: 3px;
+}
+
+.review-contact {
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 1.76;
+  color: #444444;
+}
+
+.reviews-button {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 29px;
+  margin-bottom: 36px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews {
+    width: 768px;
+    margin-bottom: 70px;
+    background-image: url("../../img/review@1x.jpg");
+    background-position-y: left;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+  }
+
+  .reviews__wapper {
+    width: 670px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 18px;
+    margin-right: 54px;
+    margin-top: 42px;
+    margin-bottom: 5px;
+  }
+
+  .reviews-title {
+    font-size: 43px;
+    line-height: 1.16;
+
+    order: 0;
+  }
+
+  .reviews-item {
+    font-size: 17px;
+    line-height: 1.76;
+    padding: 6px 25px 0 2px;
+    order: 2;
+  }
+
+  .reviews__author-contact {
+    padding-top: 16px;
+    padding-left: 3px;
+    order: 3;
+  }
+
+  .review-author {
+    font-size: 18px;
+    line-height: 1.33;
+    padding-bottom: 5px;
+  }
+
+  .review-contact {
+    font-size: 17px;
+    line-height: 1.76;
+    padding-bottom: 5px;
+  }
+
+  .reviews-button {
+    order: 4;
+  }
+
+  .button--reviews-message {
+    order: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    width: 1070px;
+    margin-left: 80px;
+    height: 457px;
+  }
+
+  .reviews__wapper {
+    width: 876px;
+    margin-left: 114px;
+    margin-top: 26px;
+  }
+
+  .reviews-title {
+    font-size: 53px;
+    line-height: 1.08;
+    margin-left: -2px;
+  }
+
+  .reviews-item {
+    padding-right: 104px;
+    margin-bottom: 25px;
+  }
+
+  .reviews__author-contact {
+    padding-top: 0;
+  }
+
+  .review-author {
+    font-size: 17px;
+    line-height: 1.41;
+    margin-bottom: 0;
+  }
+
+  .reviews-button {
+    margin-top: 11px;
+  }
+}

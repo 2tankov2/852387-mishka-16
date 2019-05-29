@@ -1,0 +1,113 @@
+.modal {
+  position: fixed;
+  width: 320px;
+  height: 366px;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #c6c6c6;
+  display: none;
+  font-size: 17px;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  background-color: #ffffff;
+  color: #444444;
+}
+
+.modal-order {
+  top: 150px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 20px;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-order__info {
+  text-transform: uppercase;
+  font-size: 25px;
+  width: 150px;
+  margin: auto;
+  margin-top: 36px;
+  color: black;
+}
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.radio + .radio__name {
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal-order__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.radio__name:nth-child(4) {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.radio__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  color: #444444;
+  font-size: 17px;
+  border: 2px solid #444444;
+  padding: 20px 52px;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.1;
+  }
+}
+
+.radio:checked + .radio__name {
+  border-color: #63d1bb;
+  opacity: 1;
+}
+
+
+.modal-order__button {
+  width: 260px;
+  height: 52px;
+  background-color: #63d1bb;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .modal-order {
+    width: 566px;
+    height: 336px;
+    padding: 0;
+  }
+
+  .modal-order__info {
+    font-size: 30px;
+    width: 400px;
+  }
+
+  .radio__name {
+    width: 112px;
+  }
+}

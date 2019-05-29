@@ -1,0 +1,108 @@
+.color {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.color__text input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+.checkmark {
+  position: relative;
+  padding: 1px 0 0 63px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  --webkit-user-select: none;
+  --moz-user-select: none;
+  --ms-user-select: none;
+  user-select: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 35px;
+    width: 37px;
+    border: 2px solid #444444;
+    background: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    left: 10px;
+    top: 1px;
+    width: 19px;
+    height: 9px;
+    border: 1px solid #444444;
+    border-width: 0 3px 3px 0;
+    opacity: 0;
+    transition: 0.2s;
+    --webkit-transform: rotate(45deg);
+    --ms-transform: rotate(45deg);
+    transform: rotate(-45deg) scaleX(-1);
+  }
+}
+
+.color__text input:checked + .checkmark::after {
+  opacity: 1;
+}
+
+.color__text input:focus + .checkmark::before {
+  border-color: #62d1ba;
+}
+
+.color__text input:active + .checkmark::before {
+  opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .color {
+    margin-left: 108px;
+    margin-top: -42px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .checkmark {
+    width: 120px;
+    padding-left: 140px;
+    margin-bottom: 39px;
+
+    &::before {
+      top: -15px;
+      left: 58px;
+      height: 48px;
+      width: 50px;
+      background: #f1f1f1;
+    }
+
+    &::after {
+      left: 70px;
+      top: -2px;
+      width: 28px;
+      height: 16px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color {
+    margin-left: 57px;
+  }
+
+  .checkmark {
+    width: 120px;
+    padding-left: 140px;
+    margin-bottom: 39px;
+  }
+}
