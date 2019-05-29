@@ -14,7 +14,7 @@
             var popup = document.querySelector(".modal-order");
 
 
-            link.addEventListener("click", function (evt) {
+            if (link) link.addEventListener("click", function (evt) {
               evt.preventDefault();
               popup.classList.add("modal-show");
 
