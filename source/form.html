@@ -72,6 +72,8 @@
         </div>
 
         <section class="form-order">
+          <h2 class="visually-hidden">Форма для заполения заказа</h2>
+
           <p class="form-order__info">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
           <form action="https://echo.htmlacademy.ru" method="post">
@@ -81,11 +83,11 @@
                     <div class="type">
                       <label class="type-radio">
                         <input type="radio" name="type" value="accessory" checked>
-                        <p class="type-radio__text">Аксессуар для интерьера</p>
+                        <span class="type-radio__text">Аксессуар для интерьера</span>
                       </label>
                       <label class="type-radio">
                         <input type="radio" name="type" value="toy">
-                        <p class="type-radio__text">Детская игрушка</p>
+                        <span class="type-radio__text">Детская игрушка</span>
                       </label>
                     </div>
             </fieldset>
@@ -96,27 +98,27 @@
                 <div class="color">
                   <label class="color__text">
                     <input type="checkbox" name="color" checked>
-                    <p class="checkmark">Белый</p>
+                    <span class="checkmark">Белый</span>
                   </label>
                   <label class="color__text">
                     <input type="checkbox" name="color" checked>
-                    <p class="checkmark">Серый</p>
+                    <span class="checkmark">Серый</span>
                   </label>
                   <label class="color__text">
                     <input type="checkbox" name="color">
-                    <p class="checkmark">«Тиффани»</p>
+                    <span class="checkmark">«Тиффани»</span>
                   </label>
                   <label class="color__text">
                     <input type="checkbox" name="color">
-                    <p class="checkmark">Черный</p>
+                    <span class="checkmark">Черный</span>
                   </label>
                   <label class="color__text">
                     <input type="checkbox" name="color">
-                    <p class="checkmark">Розовый</p>
+                    <span class="checkmark">Розовый</span>
                   </label>
                   <label class="color__text">
                     <input type="checkbox" name="color">
-                    <p class="checkmark">Оранжевый</p>
+                    <span class="checkmark">Оранжевый</span>
                   </label>
                 </div>
             </fieldset>
@@ -127,15 +129,15 @@
                 <div class="name">
                   <div class="name-it">
                     <label class="name__item" for="name__first">Имя:</label>
-                    <input type="text" id="first-name" name="name" placeholder="Введите ваше имя*">
+                    <input type="text" id="name__first" name="name" placeholder="Введите ваше имя*">
                   </div>
                   <div class="name-it">
                     <label class="name__item" for="name__second">Фамилия:</label>
-                    <input type="text" id="second-name" name="name" placeholder="Укажите фамилию*">
+                    <input type="text" id="name__second" name="name" placeholder="Укажите фамилию*">
                   </div>
                   <div class="name-it">
                     <label class="name__item" for="name__third">Отчество:</label>
-                    <input type="text" id="third-name" name="name" placeholder="Отчество, если желаете">
+                    <input type="text" id="name__third" name="name" placeholder="Отчество, если желаете">
                   </div>
                 </div>
             </fieldset>
@@ -149,7 +151,7 @@
               <fieldset class="form-order__contact contact-mail">
                 <legend class="form-order__title form-order__title--mail">E-mail</legend>
                 <div class="form-order__wapper">
-                  <input type="mail" name="contact" placeholder="Ваш Email*">
+                  <input type="email" name="contact" placeholder="Ваш Email*">
                 </div>
               </fieldset>
             </div>

@@ -1,13 +1,13 @@
 .container__title {
-  width: 100%;
   text-align: center;
-  margin: auto;
+  background-color: #f1f1f1;
+  background-size: 720px auto;
 }
 
 .title {
+  widows: 100%;
   font-size: 27px;
   line-height: 1.11;
-  background-color: #f1f1f1;
   padding-top: 71px;
   padding-bottom: 77px;
   padding-left: 35px;
@@ -18,10 +18,11 @@
 @media (min-width: @tablet-width) {
   .container__title {
     position: relative;
-    width: 768px;
+    width: 100%;
     font-size: 43px;
     margin-top: -67px;
     border-top: 1px solid #ececec;
+    background-size: 1178px auto;
 
     &::after {
       content: "";
@@ -49,7 +50,7 @@
 
 @media (min-width: @desktop-width) {
   .container__title {
-    width: 1150px;
+    background-size: 1391px auto;
     margin-top: -55px;
 
     &::after {
