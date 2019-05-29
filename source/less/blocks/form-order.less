@@ -122,23 +122,28 @@ label {
     border: none;
     margin-top: 77px;
     margin-left: 51px;
+    padding-bottom: 25px;
   }
 
   .form-order__color {
     border: none;
-    margin-top: 84px;
+    margin-top: 66px;
     margin-left: 51px;
+    padding-bottom: 25px;
   }
 
   .form-order__name {
     border: none;
-    margin-top: 84px;
+    margin-top: 68px;
     margin-left: 51px;
+    padding-bottom: 29px;
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
   .contact-tel {
     border: none;
-    margin-top: 97px;
+    margin-top: 67px;
     margin-left: 50px;
   }
 
@@ -157,7 +162,7 @@ label {
 
   .form-order__commit {
     border: none;
-    margin-top: 117px;
+    margin-top: 67px;
     margin-left: 51px;
 
     textarea {
@@ -201,5 +206,74 @@ label {
   .form-order__wapper-col {
     width: 100%;
     background-color: #f1f1f1;
+    border-top: 1px solid #f1f1f1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .wapper--col {
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-order {
+    width: 1150px;
+  }
+
+  .form-order__info {
+    padding-left: 225px;
+    padding-right: 200px;
+    padding-top: 67px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .form-order__type {
+    margin-left: 114px;
+  }
+
+  .form-order__color {
+    margin-left: 110px;
+  }
+
+  .form-order__name {
+    margin-left: 111px;
+  }
+
+  .form-order__contact {
+    margin-left: 111px;
+  }
+
+  .form-order__wapper {
+    margin-left: 114px;
+  }
+
+  .form-order__commit {
+    margin-left: 112px;
+    margin-top: 67px;
+
+    textarea {
+      width: 649px;
+      margin-left: 113px;
+
+      &::placeholder {
+        font-size: 19px;
+        line-height: 0.95;
+      }
+    }
+  }
+
+  .form-order__container {
+    width: 700px;
+  }
+
+  .form-order__note {
+    margin-top: 52px;
+  }
+
+  .button--order {
+    margin-top: 42px;
   }
 }
