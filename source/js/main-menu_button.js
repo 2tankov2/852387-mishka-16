@@ -3,10 +3,10 @@
             var popup = document.querySelector(".modal-order");
 
             for (var i = 0; i < links.length; i++) {
-               links[i].addEventListener("click", function (evt) {
-                 evt.preventDefault();
-                 popup.classList.add("modal-show");
-               });
+              links[i].addEventListener("click", function (evt) {
+                evt.preventDefault();
+                popup.classList.add("modal-show");
+              });
             }
 
             var link = document.querySelector(".product-week__order");

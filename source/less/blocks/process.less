@@ -1,28 +1,27 @@
 .process {
   width: 320px;
   position: relative;
+}
 
-  background-image: url("../../img/video-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: top 128px center;
+.process-video {
+  margin-left: 30px;
+  position: absolute;
+  top: 128px;
+}
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/video-mobile@2x.jpg");
-    background-size: 260px auto;
-  }
+.process-video__play {
+  position: absolute;
+  top: 36px;
+  left: 80px;
+  border: none;
+  background-color: transparent;
 
-  &::before {
-    position: absolute;
-    content: url("../../img/icon-play.svg");
-    top: 165px;
-    right: 110px;
-  }
-
-  &:hover::before {
+  &:hover,
+  &:focus {
     transform: scale(1.2);
   }
 
-  &:active::before {
+  &:active {
     transform: scale(0.8);
     opacity: 0.3;
   }
@@ -78,19 +77,18 @@
 @media (min-width: @tablet-width) {
   .process {
     width: 772px;
+    display: flex;
+    justify-content: center;
+  }
 
-    background-image: url("../../img/video-tablet@1x.jpg");
-    background-position: top 15px center;
+  .process-video {
+    margin: 0 auto;
+    top: 15px;
+  }
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/video-tablet@2x.jpg");
-      background-size: 668px auto;
-    }
-
-    &::before {
-      top: 205px;
-      right: 330px;
-    }
+  .process-video__play {
+    top: 187px;
+    left: 276px;
   }
 
   .process__wapper {
@@ -125,18 +123,17 @@
 @media (min-width: @desktop-width) {
   .process {
     width: 1150px;
-    background-image: url("../../img/video-desktop@1x.jpg");
-    background-position: top 56px left 50px;
+    justify-content: space-between;
+  }
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../../img/video-desktop@2x.jpg");
-      background-size: 682px auto;
-    }
+  .process-video {
+    margin-left: 50px;
+    top: 56px;
+  }
 
-    &::before {
-      top: 245px;
-      left: 375px;
-    }
+  .process-video__play {
+    top: 189px;
+    left: 286px;
   }
 
   .process__wapper {
