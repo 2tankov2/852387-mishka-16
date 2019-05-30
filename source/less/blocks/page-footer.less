@@ -18,7 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__wapper {
-    width: 100%;
+    width: 768px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -39,5 +39,11 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wapper {
+    width: 1150px;
   }
 }

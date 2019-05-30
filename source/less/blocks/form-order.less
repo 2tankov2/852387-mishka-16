@@ -102,10 +102,15 @@ label {
 
 @media (min-width: @tablet-width) {
   .form-order {
-    width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .form-order__info {
+    width: 670px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     font-size: 17px;
     line-height: 1.76;
     padding-left: 50px;
@@ -158,6 +163,7 @@ label {
     margin-right: 23px;
     margin-top: -44px;
     padding-top: 4px;
+    width: 670px;
   }
 
   .form-order__commit {
@@ -182,7 +188,6 @@ label {
     flex-direction: row;
     justify-content: space-between;
     margin: auto;
-    margin-bottom: 14px;
   }
 
   .form-order__note {
@@ -191,11 +196,10 @@ label {
     margin-top: 55px;
     font-size: 17px;
     line-height: 1.76;
-
     order: 1;
   }
 
-  .button--order {
+  .button--ord {
     width: 230px;
     margin-right: 0;
     margin-top: 46px;
@@ -218,7 +222,7 @@ label {
 
 @media (min-width: @desktop-width) {
   .form-order {
-    width: 1150px;
+    width: 100%;
   }
 
   .form-order__info {
@@ -272,7 +276,7 @@ label {
     margin-top: 52px;
   }
 
-  .button--order {
-    margin-top: 42px;
+  .button--ord {
+    margin-top: 40px;
   }
 }

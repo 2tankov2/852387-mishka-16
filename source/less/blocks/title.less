@@ -1,7 +1,7 @@
 .container__title {
+  width: 100%;
   text-align: center;
   background-color: #f1f1f1;
-  background-size: 720px auto;
 }
 
 .title {
@@ -22,7 +22,6 @@
     font-size: 43px;
     margin-top: -67px;
     border-top: 1px solid #ececec;
-    background-size: 1178px auto;
 
     &::after {
       content: "";
@@ -32,7 +31,7 @@
       height: 24px;
       background: url("../../img/bg-zigzag-fill.svg") 0 0 repeat-x;
       background-position: left -2px bottom -12px;
-      background-size: cover;
+      background-size: auto auto;
       z-index: 10;
       left: 0;
       right: 0;
@@ -50,7 +49,6 @@
 
 @media (min-width: @desktop-width) {
   .container__title {
-    background-size: 1391px auto;
     margin-top: -55px;
 
     &::after {

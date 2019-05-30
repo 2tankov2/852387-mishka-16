@@ -4,7 +4,7 @@
   background-position: top;
   background-repeat: repeat-x;
   background-size: contain;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .advantages__list {
@@ -38,7 +38,9 @@
 .advantages__item:first-child {
   width: 180px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-flower.svg");
+    position: absolute;
     top: 17px;
     left: 9px;
   }
@@ -46,9 +48,11 @@
 
 .advantages__item:nth-child(2) {
   width: 200px;
-  padding-top: 86px;
+  padding-top: 83px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-money.svg");
+    position: absolute;
     top: 33px;
     left: 1px;
   }
@@ -56,9 +60,11 @@
 
 .advantages__item:nth-child(3) {
   width: 200px;
-  padding-top: 86px;
+  padding-top: 83px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-heart.svg");
+    position: absolute;
     top: 38px;
     left: 8px;
   }
@@ -66,9 +72,11 @@
 
 .advantages__item:nth-child(4) {
   width: 230px;
-  padding-top: 86px;
+  padding-top: 83px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-ball.svg");
+    position: absolute;
     top: 35px;
     left: 4px;
   }
@@ -76,9 +84,11 @@
 
 .advantages__item:nth-child(5) {
   width: 300px;
-  padding-top: 86px;
+  padding-top: 83px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-rocket.svg");
+    position: absolute;
     top: 36px;
     left: -5px;
   }
@@ -86,9 +96,11 @@
 
 .advantages__item:last-child {
   width: 250px;
-  padding-top: 86px;
+  padding-top: 83px;
 
-  svg {
+  &::before {
+    content: url("../../img/icon-feature-gift.svg");
+    position: absolute;
     top: 34px;
     left: 4px;
   }
@@ -131,8 +143,6 @@
       order: 0;
 
       &::before {
-        content: url("../../img/icon-feature-flower.svg");
-        position: absolute;
         top: 41px;
         left: 9px;
         width: 32px;
@@ -146,8 +156,6 @@
       order: 2;
 
       &::before {
-        content: url("../../img/icon-feature-money.svg");
-        position: absolute;
         top: 58px;
         left: 1px;
         width: 47px;
@@ -161,8 +169,6 @@
       order: 4;
 
       &::before {
-        content: url("../../img/icon-feature-heart.svg");
-        position: absolute;
         top: 63px;
         left: 8px;
         width: 34px;
@@ -177,8 +183,6 @@
       order: 1;
 
       &::before {
-        content: url("../../img/icon-feature-ball.svg");
-        position: absolute;
         top: 44px;
         left: 8px;
         width: 35px;
@@ -192,8 +196,6 @@
       order: 3;
 
       &::before {
-        content: url("../../img/icon-feature-rocket.svg");
-        position: absolute;
         top: 61px;
         left: -6px;
         width: 55px;
@@ -207,8 +209,6 @@
       order: 5;
 
       &::before {
-        content: url("../../img/icon-feature-gift.svg");
-        position: absolute;
         top: 58px;
         left: 3px;
         width: 33px;

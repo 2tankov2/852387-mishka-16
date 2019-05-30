@@ -1,10 +1,18 @@
 .fast-main {
-  width: 322px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.fast-main__wapper {
+  width: 100%;
   margin: 0;
   object-fit: contain;
   background-image: url("../../img/hero-mobile@1x.jpg");
+  background-color: #f9f9f9;
+
   background-position: top -17px center;
   background-repeat: no-repeat;
+  background-size: 575px auto;
   border: 0;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -14,7 +22,9 @@
 }
 
 .fast-main__header {
-  width: 100%;
+  width: 320px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .fast-main__header-info {
@@ -22,15 +32,20 @@
   font-weight: bold;
   line-height: 1.11;
   text-align: center;
-  padding: 72px 39px 123px 38px;
-  margin: 0;
+  padding: 72px 37px 124px 37px;
+  margin: 0 auto;
 }
 
 .fast-main__items {
-  width: 100%;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
+}
+
+.fast-main__toggle {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .toggle--one {
@@ -57,12 +72,11 @@
 
 .fast-main__button {
   width: 320px;
-  height: 103px;
   color: white;
   font-size: 19px;
   font-weight: bold;
   text-align: left;
-  padding: 0 185px 0 30px;
+  padding: 25px 185px 30px 29px;
   border: 0;
   margin: 0;
 
@@ -92,7 +106,7 @@
   width: 60px;
   height: 60px;
   object-fit: contain;
-  right: 45px;
+  right: 27px;
   top: 21px;
 }
 
@@ -102,13 +116,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .fast-main {
+  .fast-main__wapper {
     position: relative;
-
+    width: 100%;
     height: 746px;
     display: flex;
     flex-direction: column;
-    width: 772px;
+
     margin: 0 auto;
     margin-top: -67px;
     margin-bottom: 2px;
@@ -116,10 +130,11 @@
     border-top: 1px solid #ececec;
     background-image: url("../../img/hero-tablet@1x.jpg");
     background-position-y: top;
+    background-size: 1150px auto;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/hero-tablet@2x.jpg");
-      background-size: 772px auto;
+      background-size: 1150px auto;
     }
 
     &::after {
@@ -130,7 +145,7 @@
       height: 24px;
       background: url("../../img/bg-zigzag-fill.svg") 0 0 repeat-x;
       background-position: left -2px bottom -12px;
-      background-size: cover;
+      background-size: auto auto;
       z-index: 10;
       left: 0;
       right: 0;
@@ -185,7 +200,6 @@
   .fast-main__button {
     margin-top: 0;
     width: 100%;
-    height: 121px;
     font-size: 20px;
     line-height: 1.5;
     padding: 26px 186px 36px 36px;
@@ -194,11 +208,11 @@
 
 
 @media (min-width: @desktop-width) {
-  .fast-main {
-    width: 1150px;
+  .fast-main__wapper {
+    width: 100%;
     margin-top: -59px;
     background-image: url("../../img/hero-tablet@1x.jpg");
-    background-size: contain;
+    background-size: 1150px auto;
     background-position-y: top;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -217,7 +231,7 @@
   }
 
   .fast-main__items {
-    width: 100%;
+    width: 1150px;
     margin-left: 100px;
     margin-right: 100px;
     box-sizing: border-box;
