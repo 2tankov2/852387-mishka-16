@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="/source/fonts/opensans.woff2" as="font">
-    <link rel="preload" href="/source/fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="/source/fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/source/fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <script>
         // Picture element HTML shiv
         document.createElement("picture");
@@ -81,6 +81,7 @@
           <form action="https://echo.htmlacademy.ru" method="post">
 
             <fieldset class="form-order__type">
+
                 <legend class="form-order__title">Тип</legend>
                     <div class="type">
                       <input type="radio" class="radio" id="accessory" name="type" value="accessory" checked>
@@ -88,6 +89,7 @@
                       <input type="radio" class="radio" id="toy" name="type" value="toy">
                       <label class="type-radio" for="toy">Детская игрушка</label>
                     </div>
+
             </fieldset>
 
             <div class="form-order__wapper-col">
